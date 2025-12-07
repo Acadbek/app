@@ -3,4 +3,5 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Geist';
+  padding-top: calc(env(safe-area-inset-top) + 20px);
 }

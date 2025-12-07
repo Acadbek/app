@@ -50,7 +50,6 @@ export const IndexPage: FC = () => {
         minHeight: '100vh',
         paddingBottom: '20px',
         fontFamily: "Geist",
-        paddingTop: '20px',
       }}>
 
         <List>
@@ -118,7 +117,7 @@ export const IndexPage: FC = () => {
               <Link key={land.id} to={`/farm/${land.id}`}>
                 <Cell
                   before={<IOSIcon icon={land.icon} color={land.color} />}
-                  after="Details >"
+                  after="Details"
                   description={land.crop}
                 >
                   {land.name}
