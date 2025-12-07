@@ -5,6 +5,10 @@ import { InitDataPage } from '@/pages/InitDataPage.tsx';
 import { LaunchParamsPage } from '@/pages/LaunchParamsPage.tsx';
 import { ThemeParamsPage } from '@/pages/ThemeParamsPage.tsx';
 import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
+import { FarmPage } from '@/pages/FarmPage.tsx';
+import { ProductPage } from '@/pages/TONConnectPage/ProductPage';
+import { BuyLandPage } from '@/pages/BuyLandPage';
+import { LivePage } from '@/pages/LivePage';
 
 interface Route {
   path: string;
@@ -41,4 +45,8 @@ export const routes: Route[] = [
       </svg>
     ),
   },
+  { path: '/farm/:id', Component: FarmPage, title: 'Tomorqa' },
+  { path: '/product/:id', Component: ProductPage, title: 'Mahsulot' },
+  { path: '/buy-land', Component: BuyLandPage, title: 'Yer Bozori' },
+  { path: '/live', Component: LivePage, title: 'Kamera' },
 ];
